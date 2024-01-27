@@ -17,7 +17,7 @@ on:
 ###################################################################################################################
 # decalre the running agent
 jobs:
-terraform:
+ terraform:
    runs-on: ubuntu-latest
 
    steps:
