@@ -1,23 +1,13 @@
-name: Terraform Deployment
+name: Terraform CD
 
 on:
   push:
     branches:
       - main
-# git clone / git checkout
-
-# aws configure
-
-# install terraform
-
-# terraform init
-
-# terraform plan
-
-###################################################################################################################
+#############################################################################
 # decalre the running agent
 jobs:
-  terraform:
+  terraform-cd:
     runs-on: ubuntu-latest
  
     steps:
@@ -40,18 +30,8 @@ jobs:
  # terraform init
     - name: Prettify Terraform
       run: terraform init
- 
-  # terraform fmt
-    - name: Initialize Terraform
-      run: terraform fmt
-  # terraform validate
-    - name: Terraform Validate
-      run: terraform validate -no-color
- 
- ##CD
- # terraform plan
-    - name: Terraform Plan
-      run: terraform plan
- 
-   #  - name: Terraform Apply
-   #    run: terraform apply --auto-approve
+
+ # terraform apply
+    - name: Terraform Apply
+      run: terraform apply --auto-approve
+
