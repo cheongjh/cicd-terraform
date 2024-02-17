@@ -15,5 +15,11 @@ provider "aws" {
 }
 
 resource "aws_sns_topic" "user_updates" {
-  name = "leon-updates-topic"
+  name = var.type
+}
+
+variable type {
+  type = string
+  default = "leon-updates-topic"
+  description = "this is a type"
 }
