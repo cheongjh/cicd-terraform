@@ -1,1 +1,8 @@
+# does not work for lock file, but works for dir
 .terraform*
+
+# .terraform/*
+
+
+# terraform lock file
+.terraform.*
