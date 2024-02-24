@@ -4,6 +4,10 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
+
 # git clone / git checkout
 
 # aws configure
