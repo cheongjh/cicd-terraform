@@ -1,8 +1,7 @@
 # does not work for lock file, but works for dir
 .terraform*
-
 # .terraform/*
-
+# once lock.hcl is pushed to remote, will need to delete file and push. gitignore does not work on files alr in remote repo
 
 # terraform lock file
 .terraform.*
